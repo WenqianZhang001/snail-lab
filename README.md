@@ -145,9 +145,8 @@ array in `data/site.js`, so navigation only has to be edited in one place.
 
 ## Notes
 
-- `404.html` uses root-absolute paths (`/assets/...`) so it renders correctly from any URL depth.
-  That assumes the site is served from a domain root — if you deploy it to a project subpath such as
-  `username.github.io/snail-lab/`, change those paths to be relative.
+- Every page uses relative asset paths, so the site works both at a domain root and at a project
+  subpath such as `username.github.io/repo-name/`.
 - Fonts (Inter, Source Serif 4) load from Google Fonts and fall back to system fonts offline.
 - The site sets no cookies and loads no analytics or trackers.
 
