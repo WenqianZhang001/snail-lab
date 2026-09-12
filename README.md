@@ -1,6 +1,6 @@
 # SNAIL Lab website
 
-Static website for the **SNAIL Lab** (Sensing, Networking, and Artificial Intelligence Lab),
+Static website for the **SNAIL Lab** (Sensing, Networking, and AI Lab),
 Department of Electrical & Computer Engineering, Yale University.
 
 Plain HTML, CSS, and JavaScript — **no build step, no dependencies, no framework**. All content
@@ -111,13 +111,16 @@ array in `data/site.js`, so navigation only has to be edited in one place.
 
 ## Before launch
 
-- [ ] Confirm the expansion of the **SNAIL** acronym in `data/site.js` (currently a placeholder).
 - [ ] **Verify every publication entry.** The seed entries in `data/publications.js` were drafted
       from public sources and must be checked against the official record.
 - [ ] Replace the placeholder art in `assets/img/` — lab photo, member photos, project figures.
 - [ ] Replace the `#` placeholders in project and publication `links`.
-- [ ] Update `url` in `data/site.js`, `sitemap.xml`, and `robots.txt` with the real domain.
 - [ ] Confirm sponsor logos are used with permission, then set `logo:` paths in `data/site.js`.
+
+`url` in `data/site.js`, plus `sitemap.xml` and `robots.txt`, are set to `https://snail-yale.github.io`
+— the address the site will have once the repo lives in the **SNAIL-Yale** organization and is named
+`snail-yale.github.io`. While the repo is hosted anywhere else those three values are simply
+inaccurate; they affect search indexing only, not rendering.
 
 ---
 

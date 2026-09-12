@@ -7,8 +7,7 @@
 window.SITE = {
   shortName: "SNAIL Lab",
 
-  // TODO: confirm the official expansion of the SNAIL acronym before launch.
-  fullName: "Sensing, Networking, and Artificial Intelligence Lab",
+  fullName: "Sensing, Networking, and AI Lab",
 
   tagline:
     "Sensing and mobile technologies for wireless networking, cyber-physical systems, and human-computer interaction.",
@@ -20,7 +19,7 @@ window.SITE = {
   university: "Yale University",
 
   // Used for absolute URLs in sitemap.xml and social preview cards.
-  url: "https://snail-lab-yale.github.io",
+  url: "https://snail-yale.github.io",
 
   email: "tara.boroushaki@yale.edu",
 
