@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="labbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08182c"/>
+      <stop offset="1" stop-color="#102c4c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#labbg)"/>
+
+  <g fill="none" stroke="#7fb2f0" stroke-width="4" stroke-linecap="round" opacity="0.9">
+    <circle cx="600" cy="268" r="52"/>
+    <path d="M512 396c0-48 40-78 88-78s88 30 88 78"/>
+    <circle cx="452" cy="300" r="38"/>
+    <path d="M384 402c0-38 30-62 68-62"/>
+    <circle cx="748" cy="300" r="38"/>
+    <path d="M816 402c0-38-30-62-68-62"/>
+  </g>
+
+  <g fill="none" stroke="#9ed0ff" stroke-width="2.5" opacity="0.3">
+    <circle cx="600" cy="268" r="186"/>
+    <circle cx="600" cy="268" r="226"/>
+  </g>
+
+  <text x="600" y="504" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="30" font-weight="600" fill="#9ed0ff" opacity="0.75" letter-spacing="0.5">Replace with a lab photo</text>
+  <text x="600" y="544" text-anchor="middle" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif"
+        font-size="19" fill="#7fb2f0" opacity="0.6">assets/img/lab-photo.svg &#183; 16:9 recommended</text>
+</svg>

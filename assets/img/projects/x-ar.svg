@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="xarbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08182c"/>
+      <stop offset="1" stop-color="#11304f"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#xarbg)"/>
+
+  <g fill="none" stroke="#7fb2f0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M118 196h164a10 10 0 0 1 10 10v42a22 22 0 0 1-22 22h-34a16 16 0 0 1-13-7l-13-18a8 8 0 0 0-13 0l-13 18a16 16 0 0 1-13 7h-34a22 22 0 0 1-22-22v-42a10 10 0 0 1 10-10z"/>
+    <path d="M146 196v-14a24 24 0 0 1 24-24h60a24 24 0 0 1 24 24v14"/>
+  </g>
+
+  <g fill="none" stroke="#9ed0ff" stroke-width="2.5" stroke-linecap="round">
+    <path d="M318 182a52 52 0 0 1 0 104" opacity="0.85"/>
+    <path d="M318 148a86 86 0 0 1 0 172" opacity="0.6"/>
+    <path d="M318 114a120 120 0 0 1 0 240" opacity="0.35"/>
+  </g>
+
+  <g fill="none" stroke="#7fb2f0" stroke-width="3" stroke-linejoin="round">
+    <path d="M540 178h172v170H540z"/>
+    <path d="M540 214h172"/>
+    <path d="M614 178v36"/>
+  </g>
+
+  <g fill="none" stroke="#f0b45f" stroke-width="3" stroke-linecap="round">
+    <circle cx="626" cy="285" r="30" stroke-dasharray="9 9"/>
+    <path d="M626 243v14M626 313v14M584 285h14M654 285h14"/>
+    <circle cx="626" cy="285" r="5" fill="#f0b45f" stroke="none"/>
+  </g>
+
+  <text x="48" y="404" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="19"
+        font-weight="600" fill="#9ed0ff" opacity="0.55" letter-spacing="2">X-AR</text>
+</svg>

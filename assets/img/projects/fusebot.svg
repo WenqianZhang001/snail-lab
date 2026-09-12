@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="fbbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08182c"/>
+      <stop offset="1" stop-color="#0e2b4c"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#fbbg)"/>
+
+  <g fill="none" stroke="#7fb2f0" stroke-width="3" stroke-linejoin="round" opacity="0.85">
+    <rect x="196" y="286" width="120" height="76" rx="8"/>
+    <rect x="322" y="300" width="104" height="62" rx="8" transform="rotate(-6 374 331)"/>
+    <rect x="432" y="278" width="128" height="84" rx="8" transform="rotate(5 496 320)"/>
+    <rect x="250" y="232" width="112" height="60" rx="8" transform="rotate(-4 306 262)"/>
+    <rect x="372" y="224" width="96" height="66" rx="8" transform="rotate(7 420 257)"/>
+    <path d="M160 366h486"/>
+  </g>
+
+  <g fill="none" stroke="#7fb2f0" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M404 58v58"/>
+    <rect x="366" y="116" width="76" height="34" rx="8"/>
+    <path d="M378 150v34l-16 18M430 150v34l16 18"/>
+  </g>
+
+  <g fill="none" stroke="#9ed0ff" stroke-width="2.5" stroke-linecap="round">
+    <path d="M352 214a68 68 0 0 0 104 0" opacity="0.75"/>
+    <path d="M326 238a104 104 0 0 0 156 0" opacity="0.5"/>
+    <path d="M300 262a140 140 0 0 0 208 0" opacity="0.28"/>
+  </g>
+
+  <g fill="none" stroke="#f0b45f" stroke-width="3" stroke-linecap="round">
+    <circle cx="404" cy="312" r="28" stroke-dasharray="9 9"/>
+    <circle cx="404" cy="312" r="5" fill="#f0b45f" stroke="none"/>
+  </g>
+
+  <text x="48" y="404" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="19"
+        font-weight="600" fill="#9ed0ff" opacity="0.55" letter-spacing="2">FUSEBOT</text>
+</svg>
