@@ -23,7 +23,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # enablement: true turns Pages on via the API if it has never been enabled,
+      # so a freshly created repo deploys without visiting Settings first.
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
