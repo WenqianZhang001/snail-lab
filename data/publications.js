@@ -19,6 +19,7 @@
    ========================================================================== */
 
 window.PUBLICATIONS = [
+  /* --- 2021-2023 entries hidden. Delete this line and the closing marker below to restore. ---
   {
     title: "Exploiting Synergies between Augmented Reality and RFIDs for Item Localization and Retrieval",
     authors: ["Tara Boroushaki", "Maisy Lam", "Weitung Chen", "Laura Dodds", "Aline Eid", "Fadel Adib"],
@@ -81,6 +82,7 @@ window.PUBLICATIONS = [
     topics: ["Robotics", "RF Perception"],
     links: { paper: "#", video: "#" },
   },
+  --- end of hidden entries --- */
   {
     title: "A Template Entry — Replace Me With Your Next Paper",
     authors: ["xxx", "Tara Boroushaki"],
