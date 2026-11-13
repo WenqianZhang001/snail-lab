@@ -1,7 +1,7 @@
 /* ============================================================================
    SHARED SITE CHROME
    Builds the header and footer from data/site.js so navigation lives in one
-   place, and handles the theme toggle and the mobile menu.
+   place, and handles the mobile menu.
    ========================================================================== */
 
 (function () {
@@ -9,35 +9,12 @@
 
   const S = window.SITE || {};
   const ICONS = window.ICONS || {};
-  const THEME_KEY = "snail-theme";
 
   function icon(name) {
     return ICONS[name] || "";
   }
 
   window.icon = icon;
-
-  /* ---- Theme ------------------------------------------------------------ */
-
-  function systemTheme() {
-    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
-      ? "dark"
-      : "light";
-  }
-
-  function activeTheme() {
-    return document.documentElement.getAttribute("data-theme") || systemTheme();
-  }
-
-  function toggleTheme() {
-    const next = activeTheme() === "dark" ? "light" : "dark";
-    document.documentElement.setAttribute("data-theme", next);
-    try {
-      localStorage.setItem(THEME_KEY, next);
-    } catch (e) {
-      /* private browsing or blocked storage — the toggle still works for this page */
-    }
-  }
 
   /* ---- Header ----------------------------------------------------------- */
 
@@ -64,16 +41,10 @@
       "</span></a>" +
       '<div class="nav-right">' +
       '<ul class="nav-links" id="nav-links">' + links + "</ul>" +
-      '<button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">' +
-      '<span class="icon-sun">' + icon("sun") + "</span>" +
-      '<span class="icon-moon">' + icon("moon") + "</span>" +
-      "</button>" +
       '<button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">' +
       icon("menu") +
       "</button>" +
       "</div></nav></div>";
-
-    host.querySelector("#theme-toggle").addEventListener("click", toggleTheme);
 
     const navToggle = host.querySelector("#nav-toggle");
     const navLinks = host.querySelector("#nav-links");
@@ -131,7 +102,6 @@
       "</div>" +
       '<div class="footer-bottom">' +
       "<span>&copy; " + new Date().getFullYear() + " " + (S.shortName || "Lab") + ". All rights reserved.</span>" +
-      "<span>Static site — no trackers, no cookies.</span>" +
       "</div></div>";
   }
 

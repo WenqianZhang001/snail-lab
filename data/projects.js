@@ -1,8 +1,9 @@
 /* ============================================================================
    PROJECTS
-   Featured projects appear on the home page; all of them appear on
-   research.html. Replace the placeholder SVGs in assets/img/projects/ with
-   real photos or figures (16:9 works best).
+   All projects appear on research.html (the home page no longer has a
+   featured-projects section, so `featured` is currently unused). Replace the
+   placeholder SVGs in assets/img/projects/ with real photos or figures (16:9
+   works best).
    ========================================================================== */
 
 window.PROJECTS = [

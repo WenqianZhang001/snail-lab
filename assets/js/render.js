@@ -308,12 +308,17 @@
     );
   }
 
+  function personNote(person) {
+    return person.note ? '<div class="person-note">' + person.note + "</div>" : "";
+  }
+
   function personCard(person) {
     return (
       '<div class="person">' +
       '<img class="person-photo" src="' + person.photo + '" alt="' + person.name + '" loading="lazy">' +
       "<h3>" + person.name + "</h3>" +
       '<div class="person-role">' + person.role + "</div>" +
+      personNote(person) +
       personLinks(person) +
       "</div>"
     );
@@ -336,6 +341,7 @@
             '<img class="person-photo" src="' + p.photo + '" alt="' + p.name + '">' +
             "<div><h3>" + p.name + "</h3>" +
             '<div class="person-role">' + p.role + "</div>" +
+            personNote(p) +
             "<p>" + (p.bio || "") + "</p>" +
             tagList(p.interests) +
             personLinks(p) +
@@ -411,8 +417,7 @@
       ["research-blocks", renderResearchBlocks],
       ["featured-projects", function (h) { renderProjects(h, true); }],
       ["all-projects", function (h) { renderProjects(h, false); }],
-      ["recent-news", function (h) { renderNews(h, 4); }],
-      ["news-list", function (h) { renderNews(h, 0); }],
+      ["recent-news", function (h) { renderNews(h, 0); }],
       ["selected-publications", function (h) { renderSelectedPublications(h, 4); }],
       ["publications", initPublications],
       ["sponsors", renderSponsors],

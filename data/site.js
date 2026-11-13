@@ -30,14 +30,13 @@ window.SITE = {
   ],
 
   // Author names matched here are bolded automatically in publication lists.
-  labAuthors: ["Tara Boroushaki", "Wenqian Zhang", "Jiacheng Cheng", "Shuyan Huang", "Tejas Bharadwaj", "Luke Huh", "Justin Chen", "Aliaa Mahgoub", "Ethan Reynolds"],
+  labAuthors: ["Tara Boroushaki", "Wenqian Zhang", "Jiacheng Cheng", "Shuyan Huang", "Tejas Bharadwaj", "Chaz Okada", "Luke Huh", "Justin Chen", "Aliaa Mahgoub", "Ethan Reynolds", "Peter Yu", "Andy Cheng", "Iyanu Nafiu"],
 
   nav: [
     { key: "home", label: "Home", href: "index.html" },
     { key: "research", label: "Research", href: "research.html" },
     { key: "publications", label: "Publications", href: "publications.html" },
     { key: "people", label: "People", href: "people.html" },
-    { key: "news", label: "News", href: "news.html" },
     { key: "join", label: "Join Us", href: "join.html" },
   ],
 

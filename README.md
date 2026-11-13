@@ -72,39 +72,43 @@ automatically — a new topic string becomes a new filter chip.
 Add an entry to `members` in `data/people.js` and set `group` to one of the group keys defined at the
 top of that file (`pi`, `phd`, `ms`, `undergrad`, `visitor`). Groups with no members are hidden
 automatically, and the **Alumni** section disappears until you add someone to the `alumni` array.
+An optional `note` shows as a small line under the role, e.g.
+`note: "Advised by Prof. Leandros Tassiulas"`.
 
 Drop a square photo into `assets/img/people/` and point `photo` at it. 600×600 px or larger looks
 best; the site crops it to a circle.
 
 ### Add a news item
 
-Add an entry to the top of `data/news.js`. Dates must be `YYYY-MM-DD`. The homepage shows the four
-most recent items; `news.html` shows all of them.
+Add an entry to the top of `data/news.js`. Dates must be `YYYY-MM-DD`. News appears only on the
+homepage, which lists every item in the file — there is no separate archive, so delete old entries
+when the list grows too long.
 
 ### Add a project
 
-Add an entry to `data/projects.js`. Set `featured: true` to show it on the homepage — all projects
-appear on the research page regardless. Project images are 16:9; replace the placeholder SVGs in
-`assets/img/projects/` with real photos or figures.
+Add an entry to `data/projects.js`; every project appears on the research page. (`featured: true`
+only matters on a page with a `featured-projects` section, and the current homepage has none.)
+Project images are 16:9; replace the placeholder SVGs in `assets/img/projects/` with real photos or
+figures.
 
 ---
 
 ## Customizing the design
 
 Colors, fonts, spacing, and corner radii are CSS variables at the top of
-[`assets/css/style.css`](assets/css/style.css). To change the accent color across the whole site,
-edit `--accent` in the `:root` block (light theme) and in the two dark-theme blocks below it.
-
-The site follows the visitor's system light/dark preference and has a manual toggle in the header;
-the choice is remembered in `localStorage`.
+[`assets/css/style.css`](assets/css/style.css). The five palette colors — `--mint`, `--pistachio`,
+`--butter`, `--coral`, and `--lilac` — drive every pastel on the site (the hero, the spectrum rules
+under the header and above the footer, research cards, buttons, and the call-to-action band), so
+changing one there changes it everywhere. Text and link colors (`--text`, `--muted`, `--accent`) are
+darker shades chosen to stay readable on the pastels. The site uses this single light color scheme.
 
 The header and footer are generated once in [`assets/js/site.js`](assets/js/site.js) from the `nav`
 array in `data/site.js`, so navigation only has to be edited in one place.
 
 ### Add a page
 
-1. Copy `news.html` to `yourpage.html`.
-2. Change `<title>`, the `<body data-page="...">` value, and the page content.
+1. Copy `people.html` to `yourpage.html`.
+2. Change `<title>`, the `<body data-page="...">` value, and replace the sections inside `<main>`.
 3. Add an entry to the `nav` array in `data/site.js` using the same `key` you put in `data-page`.
 
 ---
@@ -132,7 +136,6 @@ inaccurate; they affect search indexing only, not rendering.
 ├── research.html           Research directions + all projects
 ├── publications.html       Searchable, filterable publication list
 ├── people.html             PI, students, alumni
-├── news.html               News archive
 ├── join.html               Openings, FAQ, contact
 ├── 404.html
 ├── data/                   All editable content

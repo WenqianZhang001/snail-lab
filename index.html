@@ -13,9 +13,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&family=Source+Serif+4:opsz,wght@8..60,400..600&display=swap">
 <link rel="stylesheet" href="assets/css/style.css">
-<script>
-  try { var t = localStorage.getItem("snail-theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
-</script>
 </head>
 <body data-page="home">
 
@@ -26,7 +23,7 @@
   <section class="hero">
     <div class="container">
       <div class="hero-inner">
-        <span class="eyebrow hero-eyebrow">Tara Boroushaki &middot; Yale University</span>
+        <span class="eyebrow hero-eyebrow">Yale University</span>
         <h1>Sensing, Networking, and AI Lab</h1>
         <p class="hero-lead">
           We develop algorithms and build systems for multi-modal sensing to connect, perceive, and
@@ -34,8 +31,8 @@
           capable mobile, cyber-physical, and cyber-human systems.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-solid-light" href="research.html">Explore our research</a>
-          <a class="btn btn-on-dark" href="join.html">Join the lab</a>
+          <a class="btn btn-primary" href="research.html">Explore our research</a>
+          <a class="btn btn-ghost" href="join.html">Join the lab</a>
         </div>
         <div class="hero-meta">
           Department of Electrical &amp; Computer Engineering &middot; New Haven, CT
@@ -84,40 +81,17 @@
 
   <section class="section">
     <div class="container">
-      <div class="section-head">
-        <span class="eyebrow">Projects</span>
-        <h2>Selected work</h2>
-        <p class="lead">Systems we have designed, built, and tested on real hardware.</p>
+      <div class="split split--top split--aside">
+        <div class="section-head section-head--sm">
+          <span class="eyebrow">News</span>
+          <h2>Lab updates</h2>
+        </div>
+        <ul class="news-list" id="recent-news"></ul>
       </div>
-      <div class="grid grid-3" id="featured-projects"></div>
-      <p class="mt-3"><a href="research.html">See all projects &rarr;</a></p>
     </div>
   </section>
 
   <section class="section section--alt">
-    <div class="container">
-      <div class="split split--top">
-        <div>
-          <div class="section-head section-head--sm">
-            <span class="eyebrow">Publications</span>
-            <h2>Recent papers</h2>
-          </div>
-          <div id="selected-publications"></div>
-          <p class="mt-2"><a href="publications.html">All publications &rarr;</a></p>
-        </div>
-        <div>
-          <div class="section-head section-head--sm">
-            <span class="eyebrow">News</span>
-            <h2>Lab updates</h2>
-          </div>
-          <ul class="news-list" id="recent-news"></ul>
-          <p class="mt-2"><a href="news.html">News archive &rarr;</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
     <div class="container">
       <div class="section-head section-head--center">
         <span class="eyebrow">Support</span>
@@ -136,8 +110,8 @@
           build sensing systems end to end — from signal processing and hardware to learning and evaluation.
         </p>
         <div class="hero-actions actions--center">
-          <a class="btn btn-solid-light" href="join.html">Opportunities</a>
-          <a class="btn btn-on-dark" href="people.html">Meet the team</a>
+          <a class="btn btn-primary" href="join.html">Opportunities</a>
+          <a class="btn btn-ghost" href="people.html">Meet the team</a>
         </div>
       </div>
     </div>

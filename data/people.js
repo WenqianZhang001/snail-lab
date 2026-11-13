@@ -2,7 +2,8 @@
    PEOPLE
 
    Add a member by copying one entry and changing the fields. `group` must
-   match one of the group keys below. Photos are square images in
+   match one of the group keys below. `note` is optional and shows as a small
+   line under the role (e.g. a co-advisor). Photos are square images in
    assets/img/people/ -- 600x600 px or larger looks best.
    ========================================================================== */
 
@@ -88,6 +89,21 @@ window.PEOPLE = {
       linkedin: "",
     },
     {
+      name: "Chaz Okada",
+      group: "phd",
+      role: "PhD Student, Electrical &amp; Computer Engineering",
+      note: "Advised by Prof. Leandros Tassiulas",
+      photo: "assets/img/people/placeholder.svg",
+      bio: "Add a one or two sentence bio here.",
+      interests: ["Multi-Modal Sensing", "Wireless systems", "Robotics"],
+      email: "",
+      website: "",
+      scholar: "",
+      github: "",
+      twitter: "",
+      linkedin: "",
+    },
+    {
       name: "Luke Huh",
       group: "undergrad",
       role: "Undergraduate Student, Electrical &amp; Computer Engineering",
@@ -123,6 +139,48 @@ window.PEOPLE = {
       bio: "Add a one or two sentence bio here.",
       interests: ["Multi-Modal Sensing", "Wireless systems", "Robotics"],
       email: "ethan.reynolds@yale.edu",
+      website: "",
+      scholar: "",
+      github: "",
+      twitter: "",
+      linkedin: "",
+    },
+    {
+      name: "Peter Yu",
+      group: "undergrad",
+      role: "Undergraduate Student, Electrical &amp; Computer Engineering",
+      photo: "assets/img/people/placeholder.svg",
+      bio: "Add a one or two sentence bio here.",
+      interests: ["Multi-Modal Sensing", "Wireless systems", "Robotics"],
+      email: "",
+      website: "",
+      scholar: "",
+      github: "",
+      twitter: "",
+      linkedin: "",
+    },
+    {
+      name: "Andy Cheng",
+      group: "undergrad",
+      role: "Undergraduate Student, Electrical &amp; Computer Engineering",
+      photo: "assets/img/people/placeholder.svg",
+      bio: "Add a one or two sentence bio here.",
+      interests: ["Multi-Modal Sensing", "Wireless systems", "Robotics"],
+      email: "",
+      website: "",
+      scholar: "",
+      github: "",
+      twitter: "",
+      linkedin: "",
+    },
+    {
+      name: "Iyanu Nafiu",
+      group: "undergrad",
+      role: "Undergraduate Student, Electrical &amp; Computer Engineering",
+      photo: "assets/img/people/placeholder.svg",
+      bio: "Add a one or two sentence bio here.",
+      interests: ["Multi-Modal Sensing", "Wireless systems", "Robotics"],
+      email: "",
       website: "",
       scholar: "",
       github: "",
