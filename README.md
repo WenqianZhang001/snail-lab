@@ -36,14 +36,14 @@ copy an existing entry as a starting point.
 
 | What you want to change | File |
 | --- | --- |
-| Lab name, tagline, address, email, nav links, sponsors | [`data/site.js`](data/site.js) |
+| Lab name, tagline, address, email, nav links | [`data/site.js`](data/site.js) |
 | Research directions (the four themes) | [`data/research.js`](data/research.js) |
 | Project cards | [`data/projects.js`](data/projects.js) |
 | Publication list | [`data/publications.js`](data/publications.js) |
 | Lab members and alumni | [`data/people.js`](data/people.js) |
 | News items | [`data/news.js`](data/news.js) |
 
-Longer prose — the homepage introduction, the *Join Us* page, the FAQ — lives directly in the
+Longer prose — the homepage introduction and the *Join Us* page — lives directly in the
 corresponding `.html` file.
 
 ### Add a publication
@@ -58,14 +58,14 @@ Add an entry to the top of the array in `data/publications.js`:
   venueLong: "ACM International Conference on Mobile Computing and Networking",
   year: 2026,
   type: "conference",           // conference | journal | workshop | preprint | thesis
-  topics: ["RF Perception"],    // these become the filter chips
+  topics: ["RF Perception"],    // optional labels
   award: "Best Paper Award",    // optional
   links: { paper: "...", code: "...", video: "..." },
 },
 ```
 
-Names listed in `SITE.labAuthors` (in `data/site.js`) are automatically bolded. Topics are collected
-automatically — a new topic string becomes a new filter chip.
+Names listed in `SITE.labAuthors` (in `data/site.js`) are automatically bolded. The page lists papers
+newest year first; it has no search box or topic filter, so `topics` is optional.
 
 ### Add a person
 
@@ -86,10 +86,10 @@ when the list grows too long.
 
 ### Add a project
 
-Add an entry to `data/projects.js`; every project appears on the research page. (`featured: true`
-only matters on a page with a `featured-projects` section, and the current homepage has none.)
-Project images are 16:9; replace the placeholder SVGs in `assets/img/projects/` with real photos or
-figures.
+Add an entry to `data/projects.js` and set `direction` to the `id` of a research direction in
+`data/research.js` (`rf-perception`, `multimodal-sensing`, `robotics`, or `hri`); the project then
+appears under that direction on the research page. Project images are 16:9; replace the placeholder
+SVGs in `assets/img/projects/` with real photos or figures.
 
 ---
 
@@ -115,16 +115,15 @@ array in `data/site.js`, so navigation only has to be edited in one place.
 
 ## Before launch
 
-- [ ] **Verify every publication entry.** The seed entries in `data/publications.js` were drafted
-      from public sources and must be checked against the official record.
+- [ ] **Have the PI check the publication list.** `data/publications.js` was compiled from her Google
+      Scholar profile and website (mostly papers where she is first or second author).
 - [ ] Replace the placeholder art in `assets/img/` — lab photo, member photos, project figures.
-- [ ] Replace the `#` placeholders in project and publication `links`.
-- [ ] Confirm sponsor logos are used with permission, then set `logo:` paths in `data/site.js`.
+- [ ] `data/site.js` also keeps a `sponsors` list that no page shows at the moment. To display it, add
+      `<div class="sponsor-row" id="sponsors"></div>` to a page, and confirm any logos are used with
+      permission.
 
-`url` in `data/site.js`, plus `sitemap.xml` and `robots.txt`, are set to `https://snail-yale.github.io`
-— the address the site will have once the repo lives in the **SNAIL-Yale** organization and is named
-`snail-yale.github.io`. While the repo is hosted anywhere else those three values are simply
-inaccurate; they affect search indexing only, not rendering.
+`url` in `data/site.js`, plus `sitemap.xml` and `robots.txt`, are set to `https://snail-yale.github.io`,
+where the site is published from the **SNAIL-Yale/snail-yale.github.io** repository.
 
 ---
 
@@ -133,10 +132,10 @@ inaccurate; they affect search indexing only, not rendering.
 ```
 .
 ├── index.html              Home
-├── research.html           Research directions + all projects
-├── publications.html       Searchable, filterable publication list
+├── research.html           Research directions, each with its projects
+├── publications.html       Publication list
 ├── people.html             PI, students, alumni
-├── join.html               Openings, FAQ, contact
+├── join.html               Openings, contact
 ├── 404.html
 ├── data/                   All editable content
 ├── assets/

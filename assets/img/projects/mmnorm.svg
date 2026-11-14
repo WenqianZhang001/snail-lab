@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="mmnbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fb867c"/>
+      <stop offset="1" stop-color="#cfabdb"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#mmnbg)"/>
+
+  <g fill="none" stroke="#2e2a35" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="118" y="188" width="72" height="64" rx="8"/>
+    <circle cx="142" cy="220" r="7"/>
+    <circle cx="166" cy="220" r="7"/>
+    <path d="M154 252v86"/>
+    <path d="M120 338h68"/>
+  </g>
+
+  <g fill="none" stroke="#0f7c68" stroke-width="2.5" stroke-linecap="round">
+    <path d="M222 186a48 48 0 0 1 0 68" opacity="0.8"/>
+    <path d="M246 160a84 84 0 0 1 0 120" opacity="0.55"/>
+    <path d="M270 134a120 120 0 0 1 0 172" opacity="0.3"/>
+  </g>
+
+  <g fill="none" stroke="#2e2a35" stroke-width="3.5" stroke-linejoin="round" opacity="0.85">
+    <path d="M420 196h236v150H420z"/>
+    <path d="M420 196l-26-28h288l-26 28"/>
+  </g>
+
+  <g fill="none" stroke="#b5432f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="538" cy="282" r="42" stroke-dasharray="9 8"/>
+    <circle cx="538" cy="282" r="4.5" fill="#b5432f" stroke="none"/>
+    <path d="M496 282h-30M473.8 277.5L466 282l7.8 4.5"/>
+    <path d="M503.6 257.9L479 240.7M488 241.5L479 240.7l3.8 8.2"/>
+    <path d="M503.6 306.1L479 323.3M482.8 315.1L479 323.3L488 322.5"/>
+    <path d="M523.6 242.5L513.3 214.3M520.2 220.1L513.3 214.3L511.7 223.2"/>
+  </g>
+
+  <text x="48" y="404" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="19"
+        font-weight="600" fill="#2e2a35" opacity="0.6" letter-spacing="2">MMNORM</text>
+</svg>

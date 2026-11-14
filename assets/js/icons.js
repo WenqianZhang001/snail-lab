@@ -21,6 +21,8 @@
     waves: `<svg ${stroke}><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>`,
     layers: `<svg ${stroke}><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>`,
     robot: `<svg ${stroke}><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 8V5"/><circle cx="12" cy="3.6" r="1.3"/><path d="M2 12.5v3"/><path d="M22 12.5v3"/><circle cx="9.2" cy="13.6" r="1.15" fill="currentColor" stroke="none"/><circle cx="14.8" cy="13.6" r="1.15" fill="currentColor" stroke="none"/><path d="M9.8 17h4.4"/></svg>`,
+    /* A person beside a robot. */
+    hri: `<svg ${stroke}><circle cx="7" cy="8" r="3"/><path d="M2 20a5 5 0 0 1 10 0"/><rect x="13.5" y="10" width="8.5" height="7" rx="2"/><path d="M17.75 10V7.6"/><circle cx="17.75" cy="6.3" r="1.2"/><circle cx="16.3" cy="13.5" r="1" fill="currentColor" stroke="none"/><circle cx="19.2" cy="13.5" r="1" fill="currentColor" stroke="none"/><path d="M17.75 17v3M15.25 20h5"/></svg>`,
     headset: `<svg ${stroke}><path d="M3 9h18a1 1 0 0 1 1 1v4.6a2.4 2.4 0 0 1-2.4 2.4h-2.9a2 2 0 0 1-1.6-.8l-1.3-1.7a1 1 0 0 0-1.6 0l-1.3 1.7a2 2 0 0 1-1.6.8H4.4A2.4 2.4 0 0 1 2 14.6V10a1 1 0 0 1 1-1z"/><path d="M6 9V7.5A2.5 2.5 0 0 1 8.5 5h7A2.5 2.5 0 0 1 18 7.5V9"/></svg>`,
 
     /* UI */

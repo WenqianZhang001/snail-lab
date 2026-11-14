@@ -90,16 +90,26 @@
           '<p class="lead">' + area.summary + "</p>" +
           "</div>" +
           "<div><p>" + area.body + "</p>" +
-          '<ul class="thread-list">' +
-          (area.threads || [])
-            .map(function (t) {
-              return "<li>" + t + "</li>";
-            })
-            .join("") +
-          "</ul></div></section>"
+          threadList(area.threads) +
+          "</div>" +
+          areaProjects(area.id) +
+          "</section>"
         );
       })
       .join("");
+  }
+
+  function threadList(threads) {
+    if (!threads || !threads.length) return "";
+    return (
+      '<ul class="thread-list">' +
+      threads
+        .map(function (t) {
+          return "<li>" + t + "</li>";
+        })
+        .join("") +
+      "</ul>"
+    );
   }
 
   /* ---- Projects --------------------------------------------------------- */
@@ -118,11 +128,18 @@
     );
   }
 
-  function renderProjects(host, featuredOnly) {
+  /* Projects sit under the research direction named by their `direction`. */
+  function areaProjects(areaId) {
     const list = (window.PROJECTS || []).filter(function (p) {
-      return !featuredOnly || p.featured;
+      return p.direction === areaId;
     });
-    host.innerHTML = list.map(projectCard).join("");
+    if (!list.length) return "";
+    return (
+      '<div class="research-projects">' +
+      '<h3 class="research-projects-title">Projects</h3>' +
+      '<div class="grid grid-3">' + list.map(projectCard).join("") + "</div>" +
+      "</div>"
+    );
   }
 
   /* ---- News ------------------------------------------------------------- */
@@ -156,18 +173,16 @@
       .join(", ");
   }
 
-  function pubEntry(p, index) {
+  function pubEntry(p) {
     const award = p.award ? '<span class="tag badge-award">' + p.award + "</span>" : "";
     const venueTitle = p.venueLong ? ' title="' + p.venueLong + '"' : "";
     return (
       '<article class="pub">' +
-      '<div class="pub-index">' + (index ? index + "." : "") + "</div>" +
-      "<div>" +
       '<div class="pub-title">' + p.title + "</div>" +
       '<div class="pub-authors">' + authorLine(p.authors || []) + "</div>" +
       '<div class="pub-venue"><em' + venueTitle + ">" + p.venue + "</em><span>" + p.year + "</span>" + award + "</div>" +
       linkRow(p.links) +
-      "</div></article>"
+      "</article>"
     );
   }
 
@@ -255,15 +270,9 @@
       }
 
       const grouped = groupByYear(items);
-      let n = 0;
       host.innerHTML = grouped.years
         .map(function (year) {
-          const entries = grouped.map[year]
-            .map(function (p) {
-              n += 1;
-              return pubEntry(p, n);
-            })
-            .join("");
+          const entries = grouped.map[year].map(pubEntry).join("");
           return '<h2 class="year-head">' + year + "</h2>" + entries;
         })
         .join("");
@@ -279,11 +288,7 @@
         return b.year - a.year;
       })
       .slice(0, limit || 4);
-    host.innerHTML = list
-      .map(function (p) {
-        return pubEntry(p, 0);
-      })
-      .join("");
+    host.innerHTML = list.map(pubEntry).join("");
   }
 
   /* ---- People ----------------------------------------------------------- */
@@ -415,8 +420,6 @@
     const map = [
       ["research-cards", renderResearchCards],
       ["research-blocks", renderResearchBlocks],
-      ["featured-projects", function (h) { renderProjects(h, true); }],
-      ["all-projects", function (h) { renderProjects(h, false); }],
       ["recent-news", function (h) { renderNews(h, 0); }],
       ["selected-publications", function (h) { renderSelectedPublications(h, 4); }],
       ["publications", initPublications],

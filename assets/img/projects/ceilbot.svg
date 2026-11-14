@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="ceilbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#cfabdb"/>
+      <stop offset="1" stop-color="#86e3ce"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#ceilbg)"/>
+
+  <g fill="none" stroke="#2e2a35" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M60 64h680"/>
+    <path d="M180 64v22M620 64v22"/>
+    <path d="M150 86h500"/>
+    <rect x="330" y="94" width="110" height="36" rx="8"/>
+    <path d="M385 130v20"/>
+    <rect x="350" y="150" width="70" height="12" rx="3"/>
+    <circle cx="352" cy="86" r="7" fill="#2e2a35" stroke="none"/>
+    <circle cx="418" cy="86" r="7" fill="#2e2a35" stroke="none"/>
+  </g>
+
+  <g fill="none" stroke="#0f7c68" stroke-width="2.5" stroke-linecap="round">
+    <path d="M343 176a56 56 0 0 0 84 0" opacity="0.8"/>
+    <path d="M315 196a92 92 0 0 0 140 0" opacity="0.55"/>
+    <path d="M287 216a128 128 0 0 0 196 0" opacity="0.3"/>
+  </g>
+
+  <g fill="none" stroke="#2e2a35" stroke-width="3" stroke-linejoin="round" opacity="0.85">
+    <path d="M80 382h640"/>
+    <path d="M118 242v140M298 242v140M118 242h180M118 302h180"/>
+    <path d="M482 242v140M662 242v140M482 242h180M482 302h180"/>
+    <rect x="132" y="272" width="44" height="30" rx="4"/>
+    <rect x="186" y="278" width="34" height="24" rx="4"/>
+    <rect x="232" y="268" width="52" height="34" rx="4"/>
+    <rect x="140" y="350" width="56" height="32" rx="4"/>
+    <rect x="210" y="356" width="40" height="26" rx="4"/>
+    <rect x="258" y="348" width="30" height="34" rx="4"/>
+    <rect x="496" y="270" width="50" height="32" rx="4"/>
+    <rect x="556" y="276" width="36" height="26" rx="4"/>
+    <rect x="604" y="272" width="44" height="30" rx="4"/>
+    <rect x="500" y="352" width="40" height="30" rx="4"/>
+    <rect x="548" y="346" width="56" height="36" rx="4"/>
+    <rect x="614" y="354" width="34" height="28" rx="4"/>
+  </g>
+
+  <g fill="none" stroke="#b5432f" stroke-width="3" stroke-linecap="round">
+    <circle cx="576" cy="364" r="22" stroke-dasharray="8 8"/>
+    <circle cx="576" cy="364" r="4.5" fill="#b5432f" stroke="none"/>
+  </g>
+
+  <text x="48" y="420" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="19"
+        font-weight="600" fill="#2e2a35" opacity="0.6" letter-spacing="2">CEILBOT</text>
+</svg>

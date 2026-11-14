@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="mitobg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d0e6a6"/>
+      <stop offset="1" stop-color="#fedc92"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#mitobg)"/>
+
+  <g fill="none" stroke="#2e2a35" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M92 382h330"/>
+    <path d="M104 382h84"/>
+    <path d="M146 382v-34"/>
+    <path d="M146 348l60-118"/>
+    <path d="M206 230l96 14"/>
+    <path d="M302 244v18"/>
+    <circle cx="146" cy="348" r="9" fill="#2e2a35" stroke="none"/>
+    <circle cx="206" cy="230" r="9" fill="#2e2a35" stroke="none"/>
+    <rect x="278" y="262" width="48" height="30" rx="6"/>
+  </g>
+
+  <g fill="none" stroke="#2e2a35" stroke-width="2.5">
+    <circle cx="292" cy="277" r="6"/>
+    <rect x="304" y="271" width="14" height="12" rx="2"/>
+  </g>
+
+  <g fill="none" stroke="#0f7c68" stroke-width="2.5" stroke-linecap="round">
+    <path d="M280 304a30 30 0 0 0 44 0" opacity="0.8"/>
+    <path d="M266 318a50 50 0 0 0 72 0" opacity="0.55"/>
+    <path d="M252 332a70 70 0 0 0 100 0" opacity="0.3"/>
+  </g>
+
+  <g fill="none" stroke="#2e2a35" stroke-width="3" stroke-linejoin="round" opacity="0.85">
+    <rect x="282" y="342" width="40" height="40" rx="5"/>
+    <path d="M322 352c14 0 14 20 0 20"/>
+  </g>
+
+  <g stroke="#2e2a35" stroke-width="3" stroke-linejoin="round" opacity="0.85">
+    <rect x="532" y="138" width="180" height="130" rx="8" fill="#ffffff" fill-opacity="0.4"/>
+    <rect x="508" y="164" width="180" height="130" rx="8" fill="#ffffff" fill-opacity="0.4"/>
+    <rect x="484" y="190" width="180" height="130" rx="8" fill="#ffffff" fill-opacity="0.45"/>
+  </g>
+
+  <g fill="none" stroke="#b5432f" stroke-width="3" stroke-linecap="round">
+    <ellipse cx="574" cy="255" rx="36" ry="30" stroke-dasharray="9 8"/>
+    <circle cx="574" cy="255" r="4.5" fill="#b5432f" stroke="none"/>
+  </g>
+
+  <text x="48" y="404" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="19"
+        font-weight="600" fill="#2e2a35" opacity="0.6" letter-spacing="2">MITO</text>
+</svg>

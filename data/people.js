@@ -24,7 +24,7 @@ window.PEOPLE = {
       role: "Assistant Professor, Electrical &amp; Computer Engineering",
       photo: "assets/img/people/placeholder.svg",
       bio:
-        "Tara works on sensing and mobile technologies with applications in wireless networking, cyber-physical systems, and HCI. She received her PhD from MIT, and her work has been recognized with the Marconi Society Young Scholar Award, a Microsoft Research PhD Fellowship, and best paper awards at IEEE RFID, ACM SenSys, and ACM MobiSys.",
+        "Tara works on sensing and mobile technologies with applications in wireless networking, cyber-physical systems, and HCI. She received her PhD from MIT, and her work has been recognized with the Marconi Society Young Scholar Award, a Microsoft Research PhD Fellowship, a Best Paper Award at IEEE RFID, and Best Paper Finalist recognitions at ACM SenSys and ACM MobiSys.",
       interests: ["RF Perception", "Sensor Fusion", "Mixed Reality", "Robotic Manipulation"],
       email: "tara.boroushaki@yale.edu",
       website: "https://www.tara-boroushaki.com/",
@@ -203,14 +203,9 @@ window.PEOPLE = {
     },
   ],
 
-  // Alumni are listed compactly, with where they went next.
+  // Alumni are listed compactly, with where they went next. The Alumni section
+  // stays hidden while this list is empty.
   alumni: [
     // { name: "Former Member", role: "MS 2026", next: "Now at Example Corp", website: "" },
-    {
-      name: "Former Member",
-      role: "--",
-      next: "Now at Example Corp",
-      website: "",
-    },
   ],
 };
